@@ -40,7 +40,7 @@ const byte Muster2_RotLEDre[16]      = {R, R, R, R, R, 0, 0, 0, 0, 0, R, 0, R, 0
 const byte Muster2_RotLEDli[16]      = {R, R, R, R, R, 0, 0, 0, 0, 0, R, 0, R, 0, R, 0};
 const byte Muster2_GelbLED[16]       = {G, 0, G, 0, G, 0, G, G, G, G, G, 0, 0, 0, 0, 0};
 const byte laenge_Muster2 = sizeof(Muster2_BlauLEDre) / sizeof(Muster2_BlauLEDre[0]);
-/*
+
 const byte Muster3_BlauLEDre[12] = {B, 0, B, 0, B, 0, 0, 0, 0, 0, 0, 0};
 const byte Muster3_BlauLEDli[12] = {B, 0, B, 0, B, 0, 0, 0, 0, 0, 0, 0};
 const byte Muster3_RotLEDre[12]  = {0, 0, 0, 0, 0, 0, R, 0, R, 0, R, 0};
@@ -130,17 +130,17 @@ void loop()
     switch (taste)
     { // Codes der SKY Fernbedienung
 
-   //   case 4294967295:      //Taste1
-      case  2152211969:    //Taste1
-        muster = 1;
+      case 2152244737:
+case 2152211969:      //Taste1
+           muster = 1;
         break;
 
-    //  case 4294967295:    // Taste 2
+    case 2152244738:    // Taste 2
       case 2152211970:    // Taste 2
         muster = 2;
         break;
 
-    //  case 4294967295:   // Taste 3
+      case 2152244739:  // Taste 3
       case 2152211971:   // Taste 3
         muster = 3;
         break;
