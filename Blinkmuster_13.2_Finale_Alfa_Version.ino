@@ -139,7 +139,7 @@ void loop()
       case 2152211970:    // Taste 2
         muster = 2;
         break;
-/*
+
     //  case 4294967295:   // Taste 3
       case 2152211971:   // Taste 3
         muster = 3;
@@ -184,7 +184,7 @@ void loop()
            case 2152244952: // Taste Zoom
              muster = 11zoom;
              break;
-      */
+*/
       case 2152244845:   //Taste Rot
       case 2152212077:
         muster = rotEIN = !rotEIN;
@@ -246,7 +246,7 @@ void ausgabe(byte ledmuster, bool blau, bool rot, bool gelb)
       gelb ?   analogWrite(Gelb, Muster2_GelbLED[j]) : analogWrite(Gelb, 0);
     }
 
-/*
+
 
 
 
@@ -336,7 +336,7 @@ void ausgabe(byte ledmuster, bool blau, bool rot, bool gelb)
 
      
     }
- */
+
 
  
   }
@@ -344,7 +344,7 @@ void ausgabe(byte ledmuster, bool blau, bool rot, bool gelb)
 
 
 
-/*
+
   if (ledmuster == 11)
   {
 
@@ -433,7 +433,7 @@ void ausgabe(byte ledmuster, bool blau, bool rot, bool gelb)
 
 
 
-  }*/
+  }
 /*
      lcd.clear();
      lcd.setCursor(0, 0);                 //Spalte, Zeile
